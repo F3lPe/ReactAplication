@@ -7,8 +7,8 @@ import Cards1 from './Card1'
 
 //GERANDO CARTÕES
 function Cards() {
-
     const [cards, setCards] = useState([])
+    
 
     function addCard() {
 
@@ -41,6 +41,7 @@ function Cards() {
                 <h2>
 
                     Crie cartões
+                   
 
                 </h2>
 
