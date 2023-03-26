@@ -8,7 +8,6 @@ function Cards1(props) {
 
 
     const [enable, setEnable] = useState(false)
-
     const [disable, setDisable] = useState(true)
     const [disable1, setDisable1] = useState(false)
     const [disable2, setDisable2] = useState(true)
@@ -29,8 +28,17 @@ function Cards1(props) {
         setDisable3(true)
     }
 
-  
+    function enabled(){
+        if(enable === false){
+            setEnable(true);
+            alert("Welcome to js")
+           
+         
+        }else{
+            setEnable(false);
+        }
 
+    }
 
     function addCard() {
 
@@ -89,28 +97,20 @@ function Cards1(props) {
 
             {disable3 &&
                 <>
-
-
-
-                    <input type="text"
+                    
+                    <input type="text" 
 
                         className='input' placeholder= "DESCRIÇÃO" disabled={enable}>
+                            
 
                     </input>
 
                 </>
             }
-
-
-
-
-
-
-
-           
+ 
             <div id="AD">
                 <button type='submit' id="buttonMost"
-                    onClick={setEnable} disabled={enable} >
+                    onClick={enabled} >
                     <span>Criar</span>
                 </button>
 
@@ -118,7 +118,7 @@ function Cards1(props) {
                     onClick={() => addCard()} >
 
                     
-                       <BsArrowDownCircle  />
+                       <BsArrowDownCircle/>
                     
 
                 </button>
