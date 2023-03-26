@@ -11,7 +11,7 @@ function Cards() {
     
 
     function addCard() {
-
+        alert("Criou um Card")
         if (cards.length < 6) {
 
             const id = Math.floor(Math.random() * 10000)
@@ -58,20 +58,10 @@ function Cards() {
 
                 {
                     cards.map(card =>
-
-
                     (
                         <Cards1
-                           
-
-
-
                         />
-
-
-
                     )
-
                     )
                 }
 
