@@ -61,6 +61,93 @@ switch (number) {
 } */
 
 // -------------------------------------
+
+//while --------------------
+
+/* let numb = Number;
+let frase = prompt('Digite uma palavra');
+let fraseResult;
+
+while (numb < 6) {
+    console.log(numb,fraseResult)
+    numb++;
+    fraseResult = frase;
+    
+} */
+
+/* let max = 5;
+let min = 1
+let random = Math.floor(Math.random() * (max - min + 1)) + min
+let tentativas = 0;
+let number;
+
+do {
+    tentativas++;
+    let input = Number(prompt('Digite um número'));
+    number = input;
+    if (number === random) {
+       alert(`total de tentativas ${tentativas}`) 
+    }
+
+} while (random) */
+
+
+
+
+/* for (let a = 1 ; a < 4 ; a++){
+    console.log(`'A' é igual a 3 :` , a);
+    
+    for (let b = 0 ; b < 5; b++){   
+    
+    }
+
+    if(a >= 4){
+        break;
+   }
+
+} */
+    
+/* const idade = Number(prompt("Digite sua idade"));
+
+if(idade < 18){
+    alert("Você é menor de idade");
+} else if(idade >= 18){
+    alert("Você é maior de idade");
+} */
+
+
+const num = [1,2,3,4,5,2,5,4]
+
+const pessoa = [
+    {
+        id:1 , nome: "felipe", idade: 15
+    },
+
+    {
+        id: 2 , nome: "joão", idade: 15
+    },
+
+    {
+        id:3, nome: "andré", idade: 20
+    },
+ ]
+//usar quando for preciso traduzir ou mapear todos os elementos do array
+//para outro conjunto de valores.
+ const somaTotal  = num.map(element => element * 5)
+console.log("Soma" , somaTotal)
+
+//reduce
+//usar quando for preciso encontrar um valor cumulativo 
+// ou concatanedo 
+
+const total = pessoa.reduce((e,f) =>  e + f.idade, 0)
+console.log("reducer-soma total dos número : " ,total)
+ //---------------------------------------------------------------------
+
+
+
 }
+
+
 
 export default Trainning;
