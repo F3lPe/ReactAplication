@@ -116,7 +116,7 @@ if(idade < 18){
 } */
 
 
-const num = [1,2,3,4,5,2,5,4]
+/* const num = [1,2,3,4,5,2,5,4]
 
 const pessoa = [
     {
@@ -141,8 +141,40 @@ console.log("Soma" , somaTotal)
 // ou concatanedo 
 
 const total = pessoa.reduce((e,f) =>  e + f.idade, 0)
-console.log("reducer-soma total dos número : " ,total)
+console.log("reducer-soma total dos número : " ,total) */
+
+//function recursiva é uma função que chama si mesma 
+//até que não o faça mais;
+
+/* const func = (value) => {
+    if(value <= 0){
+        return value;
+    }
+    console.log(value)
+    return value + func(value - 1)
+    
+}
+console.log(func(5)); */
+
+/* let [A,B,C] = '';
+A = Number(prompt("Digite um valor para o A"))
+B = Number(prompt("Digite um valor para o B"))
+C = Number(prompt("Digite um valor para o C"))
+
+if(A > B && A > C){
+    console.log("O valor inserido em A é o maior : ", A)
+
+} else if(B > C && B > A){
+    console.log("O valor inserido em B é o maior : ", B)
+
+} else if(C > A && C > B){
+    console.log("O valor inserido em C é o maior : ", C)
+} */
+
+
  //---------------------------------------------------------------------
+
+
 
 
 
