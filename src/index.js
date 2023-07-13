@@ -5,11 +5,13 @@ import App from './App';
 import Trainning from './Trello/study';
 import reportWebVitals from './reportWebVitals';
 import Obj_prototype from './Trello/aulasConstrutorModulo';
+import Class from './Trello/class';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    
     <Trainning/>
     <Obj_prototype/>
   </React.StrictMode>
