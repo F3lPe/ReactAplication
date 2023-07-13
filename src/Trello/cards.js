@@ -1,6 +1,7 @@
 import { VscAdd } from 'react-icons/vsc'
 
 import React, { useState } from 'react'
+import Class from './class'
 
 import Cards1 from './Card1'
 
@@ -66,7 +67,7 @@ function Cards() {
                 }
 
             </div>
-
+            <Class/>
 
         </section>
 
