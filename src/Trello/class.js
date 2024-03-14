@@ -22,14 +22,14 @@ class Class extends Component{
        
     
     promessa(random).then((res) => {
-    console.log("number 1:" + res) 
+    /* console.log("number 1:" + res)  */
     return promessa(random)}).then(res => {
-        console.log("number 2: "+res)
+        /* console.log("number 2: "+res) */
         return promessa(random)
     } , res => {
-        console.log(res) 
+        /* console.log(res)  */
     }).then(res => {
-        console.log("number 3:" + res)
+       /*  console.log("number 3:" + res) */
     }).catch( res => console.log(res))
     
         

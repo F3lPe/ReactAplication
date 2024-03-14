@@ -1,7 +1,8 @@
 
 import './App.css';
 import Cards from "./Trello/cards"
-import Class from './Trello/class';
+import Routes from './Routes';
+import Study from './Trello/study';
 
 import "./Trello/Trello.css"
 
@@ -10,9 +11,8 @@ function App() {
 
   return (
     <div className="App">
-      
-     <Cards/>
-     
+      <Cards/>
+      <Study/>
     </div>
   );
 }
