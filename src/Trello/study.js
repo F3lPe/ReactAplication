@@ -1,5 +1,6 @@
-
-function Trainning(){
+import { useState } from "react";
+import React from "react";
+function Study(){
 
  /* window.confirm("Bem-vindo kkkkkkkkk");
  const num1 = Number(prompt("digite um número"));
@@ -173,13 +174,52 @@ if(A > B && A > C){
 
 
  //---------------------------------------------------------------------
+/* 
+const carros = ['vw' , 'fiat', 'ford']
+let maiorCaracter = 0
+let result = ''
+for(var b = 0; b < carros.length; b++){
+ if(carros[b].length > maiorCaracter){
+    maiorCaracter = carros[b].length
+    result = carros[b]
+ }
+}
+console.log(result)
+const num = [100,400,100]
+let maiorNum = num[0]
+
+for(var a = 0; a < num.length; a++){
+    if(num[a] > maiorNum){
+        maiorNum = num[a]
+    }
+}
+console.log(maiorNum) */
+
+const num = [-3, 2, 1, "-5"]
+const filter = num.filter(num => num <= 0)
+console.log(filter)
+
+const meuArray = [
+    { nome: 'Objeto 1', valor: 42 },
+    { nome: 'Objeto 2', valor: 123 },
+    { nome: 'Objeto 3', valor: 78 }
+  ];
 
 
+  localStorage.setItem("meuArray", JSON.stringify(meuArray))
 
+  console.log(JSON.parse(localStorage.getItem("meuArray")))
 
+  const numeros = [];
+    let soma = 0;
 
+for(let i = 0 ; i < 100; i++){
+	numeros.push(i);
+    soma = numeros.reduce((acu,valorAtual) => acu + valorAtual,0)
+    }
+    console.log(soma)
 }
 
 
 
-export default Trainning;
+export default Study;
