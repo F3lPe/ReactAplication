@@ -1,11 +1,17 @@
 import { Component } from "react";
 
 class Class extends Component{
- 
+    constructor(props) {
+        super(props)
+        this.state = {
+            nome: ""
+        }
+    }
     render(){
         const a = 'olá mundo'
         const A = 1
         const B = 3
+        this.setState({nome: a})
         const random = Math.floor(Math.random() * (B-A+1) + B)
         const promessa = (idade, nome) => {
         
